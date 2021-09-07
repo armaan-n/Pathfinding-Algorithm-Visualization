@@ -1,0 +1,165 @@
+body {
+    background-color: #454545;
+
+    display: inline-flex;
+
+    font-family: 'Roboto', sans-serif;
+    color: white;
+
+    outline: none;
+
+    overflow: hidden;
+}
+
+#title {
+    font-weight: bold;
+}
+
+#menu {
+    width: 25vw;
+    height: 100vh;
+
+    margin-left: 5%;
+    margin-top: 1vh;
+}
+
+#title-item {
+    height: 5%;
+    
+    font-size: 3vh;
+}
+
+#size-item {
+    height: 15%;
+
+    margin-top: 5vh;
+}
+
+#algo-item {
+    height: 10%;
+}
+
+#speed-item {
+    height: 10%;
+}
+
+#button-item {
+    height: 40%;
+}
+
+.menu-item {
+    margin-bottom: 4vh;
+
+    height: fit-content;
+}
+
+.menu-label {
+    display: block;
+
+    width: fit-content;
+
+    margin-bottom: 2vh;
+
+    font-size: 3vh;
+}
+
+.sub-container {
+    width: fit-content;
+
+    float: left;
+
+    margin-right: 5%;
+}
+
+.menu-sub-label {
+    display: block;
+
+    font-size: 2vh;
+    width: fit-content;
+}
+
+.step-counter {
+    width: 70%;
+    outline: none;
+
+    font-size: 2vh;
+}
+
+.common-button {
+    display: block;
+
+    padding: 2%;
+
+    height: 4vh;
+    line-height: 2vh;
+
+    margin-bottom: 1vh;
+
+    font-size: 2vh;
+    font-weight: 500;
+
+    border-radius: 500px;
+    border: none;
+}
+
+#speed-slider {
+    width: 10vw;
+    background-color: transparent;
+    -webkit-appearance: none;
+}
+
+#speed-slider::-webkit-slider-runnable-track {
+    background: #3071a9;
+    border: 0.2px solid #010101;
+    border-radius: 1.3px;
+    width: 100%;
+    height: 1vh;
+    cursor: pointer;
+}
+
+#speed-slider::-webkit-slider-thumb {
+    margin-top: -0.5vh;
+    width: 0.3vw;
+    height: 2vh;
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5%;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+#algo-select {
+    font-size: 2vh;
+}
+
+#wall-exp {
+    font-size: 2vh;
+
+    white-space: pre-line;
+
+    margin-bottom: 4vh;
+}
+
+#algo-select {
+    outline: none;
+}
+
+#grid-space {
+    width: 70vw;
+    height: 95vh;
+
+    margin-top: 0vh;
+}
+
+#grid {
+    display: grid;
+
+    height: 100%;
+    width: 90%;
+}
+
+.node {
+    background-color: #c9c9c9;
+
+    border: 1px solid #2e2e2e;
+}

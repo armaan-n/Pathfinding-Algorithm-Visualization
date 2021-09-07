@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/styles/index.css">
+        
+    </head>
+    <body>
+        <div id="menu">
+            <div class="menu-item" id="title-item">
+                <label id="title">Path Finding Visualization</label>
+            </div>
+            
+            <div class="menu-item" id="size-item">
+                <label class="menu-label">Size</label>
+                <div class="sub-container">
+                    <label class="menu-sub-label">Rows</label>
+                    <input class="step-counter" type="number" id="rows" value="50" name="points" step="1" min="5" max="50">
+                </div>
+
+                <div class="sub-container">
+                    <label class="menu-sub-label">Columns</label>
+                    <input class="step-counter" type="number" id="cols" name="points" step="1" min="5">
+                </div>
+            </div>
+
+            <div class="menu-item" id="algo-item">
+                <label class="menu-label">Algorithm</label>
+                <select name="Algorithm" id="algo-select">
+                    <option selected="selected" value="A Star">A*</option>
+                    <option value="Breadth">Breadth First Search</option>
+                    <option value="Depth">Depth First Search</option>
+                    <option value="Dijkstra">Dijkstra's Algorithm</option>
+                    <option value="Greedy">Greedy Best First</option>
+                </select>
+            </div>
+
+            <div class="menu-item" id="speed-item">
+                <label class="menu-label">Speed</label>
+                <input type="range" min="1" max="50" value="25" class="slider" id="speed-slider">
+            </div>
+
+            <div class="menu-item" id="button-item">
+                <button class="common-button" id="choose-start">Choose Start Node</button>
+                <button class="common-button" id="choose-dest">Choose Destination Node</button>
+                <p id="wall-exp">
+                    Left click and drag to draw / remove walls.
+                </p>
+                <button class="common-button" id="run">Run</button>
+                <button class="common-button" id="maze-gen">Generate Maze</button>
+                <button class="common-button" id="clear">Clear All</button>
+            </div>
+        </div>
+
+        <div id="grid-space">
+            <div id="grid">
+            </div>
+        </div>
+
+        <script src="scripts/node.js"></script>
+        <script src="scripts/algorithms.js"></script>
+        <script src="scripts/index.js"></script>
+    </body>
+</html>
