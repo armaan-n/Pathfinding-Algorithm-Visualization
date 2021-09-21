@@ -142,7 +142,7 @@ function initializeGrid(cols, rows) {
     nodeGrid.innerHTML = '';
 
     // Set the number and size of rows and cols
-    if (window.innerHeight > window.innerWidth) {
+    if (gridSpace.offsetWidth / cols < gridSpace.offsetHeight / rows) {
         console.log("cols", colInput.value, rowInput.value);
         nodeGrid.style.gridTemplateRows = 'repeat(' + rows + ', ' + gridSpace.offsetWidth / cols + 'px)';
         nodeGrid.style.gridTemplateColumns = 'repeat(' + cols + ', ' + gridSpace.offsetWidth / cols + 'px)';
