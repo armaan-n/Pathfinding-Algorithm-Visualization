@@ -106,14 +106,14 @@ mazeGen.addEventListener('click', () => {
 // When cols are changed
 colInput.addEventListener('input', () => {
     cols = parseInt(colInput.value);
-
+    enableButtons();
     initializeGrid(colInput.value, rowInput.value);
 });
 
 // When rows are changed
 rowInput.addEventListener('input', () => {
     rows = parseInt(rowInput.value);
-
+    enableButtons();
     initializeGrid(colInput.value, rowInput.value);
 });
 
